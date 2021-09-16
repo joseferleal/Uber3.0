@@ -1,0 +1,43 @@
+header ul{
+    background-color: rgb(10, 120, 216);
+    list-style-type: none;
+    margin:0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+header ul li{
+    float:left;
+}
+header ul li a{
+    color:white;
+    text-decoration-line:none;
+    padding: 12px;
+    display: block;
+
+}
+header ul li a:hover{
+    background-color: rgb(238, 151, 44);
+}
+
+body{
+    margin:0%;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/550/504/non_2x/cute-cartoon-blue-sky-with-cloud-and-sun-background-wallpaper-free-vector.jpg");
+}
+
+footer span{
+    font-weight: bold;
+    padding: 20px;
+}
+
+/*Estilo del contenedor*/
+#contenedor{
+    background-color:green;
+    width:35%;
+
+}
+/*Media Queries*/
+@media only screen and(max-width:650px){  #contenedor{
+       width:100%;
+}
+}

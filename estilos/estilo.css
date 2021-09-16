@@ -1,0 +1,46 @@
+/*Posiciones absolutas y relativas*/
+/*Posición absoluta*/
+
+#img1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+#img2{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#img3{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+#img4{
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+}
+
+/*Estilos en cascada y animaciones*/
+#img4{
+    animation: flotar 5s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/550/504/non_2x/cute-cartoon-blue-sky-with-cloud-and-sun-background-wallpaper-free-vector.jpg");
+}
