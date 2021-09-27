@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
     <link rel="stylesheet" href="../estilos/estilo2.css" />
+    <!--Modal-->
+    <link rel="stylesheet" href="../estilos/modal.css">
+   
   <!--Enlace a los estilos de Bootstrap-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   
 
 <!--Script para darle transición al carrusel-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <title>Uber cocina</title>
-  <link rel="shortcut icon" href="../resources/icono3.jpg">  
+  <title>Quirama cocina</title>
+  <link rel="shortcut icon" href="../Resources/icono3.jpg">  
 
 </head>
   <body>
+    
     <header>
     
         <!--Menú desplegable 1-->
@@ -26,7 +31,7 @@
 
       <ul>
         <li id="title">
-          <a href="">Uber Cocina</a>
+          <a href="">Quirama Cocina</a>
         </li>
         <section id="title2">   <li>
           <a href="chef.html">El chef</a>
@@ -51,13 +56,13 @@
   <div class.active="carousel-inner">
     <br>
     <div class="carousel-item active">
-      <img src="../resources/Banner5.jpg" class="d-block w-100" alt="..." height= 400px width="200px">
+      <img src="../Resources/Banner5.jpg" class="d-block w-100" alt="..." height= 400px width="200px">
     </div>
     <div class="carousel-item">
-      <img src="../resources/Banner2.jpg"  class="d-block w-100" alt="..." height= 400px width="200px" >
+      <img src="../Resources/Banner2.jpg"  class="d-block w-100" alt="..." height= 400px width="200px" >
     </div>
     <div class="carousel-item">
-      <img src="../resources/otra.jpg" class="d-block w-100" alt="..." height= "400px" width="200px" >
+      <img src="../Resources/otra.jpg" class="d-block w-100" alt="..." height= "400px" width="200px" >
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -79,16 +84,16 @@
   <br>
   <br>
   
-  <button type="button" class="btn btn-primary position-relative"> <a href="https://www.facebook.com/Quirama-Parrilla-bar-y-servicios-208614999669342/" target="_blank"><img src="../resources/facebook3.png" alt="" height= 25px width="25px"> </a>    
+  <button type="button" class="btn btn-primary position-relative"> <a href="https://www.facebook.com/Quirama-Parrilla-bar-y-servicios-208614999669342/" target="_blank"><img src="../Resources/facebook3.png" alt="" height= 25px width="25px"> </a>    
   </button>
   <br>
   <br>
-  <button type="button" class="btn btn-primary position-relative"> <a href="http://www.instagram.com" target="_blank"><img src="../resources/instagram.png" alt="" height= 25px width="25px"></a>  
+  <button type="button" class="btn btn-primary position-relative"> <a href="http://www.instagram.com" target="_blank"><img src="../Resources/instagram.png" alt="" height= 25px width="25px"></a>  
      
   </button>
   <br>
   <br>
-  <button type="button" class="btn btn-primary position-relative"><a href="https://www.youtube.com/channel/UCLt3_3Pa92Lo_T9x-csRHAQ" target="_blank"><img src="../resources/youtube.png" alt="" height= 25px width="25px"> </a>
+  <button type="button" class="btn btn-primary position-relative"><a href="https://www.youtube.com/channel/UCLt3_3Pa92Lo_T9x-csRHAQ" target="_blank"><img src="../Resources/youtube.png" alt="" height= 25px width="25px"> </a>
      
   </button>
   <br>
@@ -102,11 +107,12 @@
 <br>
 <br>
 <br>
-<br>
-<br>
+<h2>El chef</h2>
+<hr>
 <section>  <div id="contenedor">
+  
   <p> 
-    Con más de veinte años de experiencia en la gastronomía, el chef Uber se perfila como uno de los talentos más destacados en el entorno gourmet.
+    Con más de veinte años de experiencia en la gastronomía, el chef Huber se perfila como uno de los talentos más destacados en el entorno gourmet.
     Sus preparaciones exquisitas, su amabilidad y su pasión por la cocina y el servicio lo convierten en la elección ideal para sus clases y eventos
     y toda clase de ideas relacionadas con la gastronomía</p>
       </div>  </section>
@@ -121,11 +127,27 @@
         <li> Cumpleaños y eventos especiales</li> 
       </ul>
       <section id="images"> 
-       <img class="postre" src="../resources/pechuga.jpg" alt="">  
+       <img class="postre" id="img1" src="../Resources/pechuga.jpg" alt="Pechuga asada">  
       
-        <img class="postre" src="../resources/barril.jpg" alt=""> 
+        <img class="postre" id="img2" src="../Resources/barril.jpg" alt="Lomo al barril"> 
         
-        <img class="postre" src="../resources/postre.jpg" alt="">    </section>
+        <img class="postre" id="img3"  src="../Resources/postre.jpg" alt="Fiesta de quinces">  
+      
+                   <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+  
+     
+      </section>
 
       </section>
 
@@ -144,7 +166,7 @@
     <br>
     <br>
     <br>
-    <a href="https://wa.me/573192284809?text=Hola,%20quiero%20recibir%20información%20sobre%20el%20menú" target="_blank"> <button type="button" class="whatsapp" title="Chatea con nosotros""> <img src="../resources/wp.png" alt="" class="wp">  </button>   </a>  
+    <a href="https://wa.me/573052212012?text=Hola,%20quiero%20recibir%20información%20sobre%20el%20menú" target="_blank"> <button type="button" class="whatsapp" title="Chatea con nosotros""> <img src="../Resources/wp.png" alt="" class="wp">  </button>   </a>  
  
     <footer> <div>
       <p> <h3> ¡Danos el gusto de atenderte!  </h3></p>
@@ -160,5 +182,6 @@
     
     
     </footer>
+    <script src="../modal.js"></script>  <!--Que lo cargue de último, de modo que ya se hayan cargado los elementsId-->
   </body>
 </html>
